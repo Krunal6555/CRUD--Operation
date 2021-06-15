@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta name="format-detection" content="telephone=no"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/bcf6add9ba.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>
+        CRUD Operation
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container mt-2 text-center">
+        <h1 class="bg-light py-4 text-info">
+            <i class="fas fa-user-tie"></i>
+            Employee Form
+        </h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="employee-form">
+            <form onsubmit=" onFormSubmit();" class="inline" autocomplete="off">
+                <div class="form-group">
+
+                    <!-- 1  name-->
+                    <div class="form-row">
+
+                        <div class="col">
+
+                            <div class="input-group mt-2 md-3 input-group-sm">
+                                <div class="input-group-prepend">
+                                    <div class="validation-error hide" id="fullNameValidationError">
+                                    <span class="input-group-text">Employee Name</span>
+                                </div>
+                            </div>
+                                <input type="text" class="form-control" id="fullName" contenteditable="true"
+                                    name="fullNname" placeholder="Emp name..." required>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 email -->
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="input-group mt-5 md-3 input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Email Id</span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="@gmail.com" id="email">
+                            </div>
+                        </div>
+
+                        <!-- phone num  -->
+                        <div class="col">
+                            <div class="input-group mt-5 mb-3 input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" >Phonoe Number</span>
+                                </div>
+                                <input type="number" class="form-control" id="number" placeholder="(+91) 00000-00000" required>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- address  -->
+                    <textarea name="address" id="address" cols="150" rows="4" placeholder="Address..."></textarea>
+                    <!-- 4-city -->
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="input-group mt-3 md-3 input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text city">City</span>
+                                </div>
+                                <input type="text" class="form-control" id="city">
+                            </div>
+                        </div>
+
+                        <!-- state  -->
+                        <div class="col">
+                            <div class="input-group mt-3 md-3 input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">State</span>
+                                </div>
+                                <input type="text" class="form-control" id="state">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- employee id  -->
+
+                    <div class="input-group mt-3 md-3 input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Employee ID</span>
+                        </div>
+                        <input type="number" class="form-control" id="empid" placeholder="EmployeeID..." required>
+                    </div>
+
+                    <!-- 3 Salary -->
+
+                    <div class="input-group mt-3 md-3 input-group-sm">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Employee Salary</span>
+                        </div>
+                        <input type="number" class="form-control" id="salary" placeholder="Salary..." required>
+                    </div>
+
+                    <!-- remember me  -->
+                    <div class=" form-group form-check-inline mb-1">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember" id="remember" required>Remember me
+                        </label>
+
+
+                        <!-- <input type="submit" value="Submit"> -->
+                        <div class="form-action-buttons">
+                            <button type="submit" class="btn btn-outline-primary btn-md" id="btnadduser" value="submit">Add
+                            User</button>
+                            
+                        </div>
+                        <!-- <button type="submit" class="btn btn-outline-warning btn-md" id="btnsave"
+                                value="submit">Save</button> -->
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <div class="employees-table">
+        <div class="container d-flex">
+
+            <table class="table table-striped list table"  id="employeeList">
+                
+                    <thead>
+                        <tr>
+                            <th scope="col">Emp. Name</th>
+                            <th scope="col">Ph. number</th>
+                            <th scope="col">Salary</th>
+                            <th scope="col">Emp Id</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                
+            </table>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+/* my css  */
+body{
+    background: color #f5f5f5;
+    
+}
+.container{
+    background-color: none;
+}
+.d-flex input{
+    /* margin: .em 0em; */
+    margin: 10px;
+}
+/* .input-group-prepend{
+    border-radius: none;
+    padding: 5px;
+} */
+
+#fullNameValidationError{
+    padding: 3px;
+}
+/* .input-group-prepend{
+    width: 42%;
+    /* padding: 1px; */
+    /* margin: 1px; */
+/* } */ 
+/* .validation-error hide */
+.size {
+    width: 42%;
+}
+.size1{
+    width: 42%;
+}
+.size2{
+    width: 42%;
+}
+.size3{
+    width: 42%;
+}
+#btnadduser{
+    margin-left: 33px;
+}
+#remember, #btnadduser,#btnsave {
+    margin-top: 30px;
+}
+.col{
+    padding: 0px;
+}
+/* }
+#btnsave{
+    display: none;
+} */
+#btnsave:hover{
+    color: #ffffff;
+}
+
+.container table{
+    margin: 2px;
+}
+.btn{
+    margin: 8px;
+    
+}
+.listtable {
+    margin: 20px 5px;
+    /* width: 100%; */
+    }
+
+.btnedit{
+    color: green;
+    cursor: pointer;
+}
+.btndelete{
+    color: red;
+    cursor: pointer;
+}
+.employees-table 
+{
+   
+    padding: 2px 3px;
+    /* text-align: left; */
+    width: 100%;
+
+}
+/* 
+#salary{
+    margin: 1px;
+    padding: 1px;
+} */
+/* .id {
+    counter-reset: rowNumber;
+}
+.id::before{
+    counter-increment: rowNumber;
+    content: counter(rowNumber);
+} */
+
+
+
+/* my css over  */
+
+
+
+
+
